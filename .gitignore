@@ -194,4 +194,5 @@ cython_debug/
 .cursorindexingignore
 
 #exclude raw data files
-Data/
+Data/*
+!Data/*.dvc
