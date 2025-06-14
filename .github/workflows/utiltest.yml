@@ -23,3 +23,8 @@ jobs:
 
       - name: CI initialized
         run: echo "UtilTests CI setup completed. Add test commands here when ready."
+      
+      - name: Run unit tests
+        env:
+          MPLBACKEND: Agg  
+        run: python -m unittest discover tests
